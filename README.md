@@ -48,6 +48,9 @@
 
 ```
 prompt-home/
+├── .github/
+│   └── workflows/
+│       └── deploy.yml              # GitHub Actions 部署配置
 ├── public/
 │   └── data/
 │       ├── resources.json          # 学习资源数据
@@ -79,8 +82,9 @@ prompt-home/
 ### 本地开发
 
 #### 前置要求
-- Node.js 16+ 
+- Node.js 18+ 
 - npm 或 yarn
+- Git
 
 #### 安装步骤
 
@@ -117,89 +121,84 @@ npm run preview
 
 ### 部署到 GitHub Pages
 
-#### 方法一:自动部署(推荐)
+项目已配置 GitHub Actions 自动化部署,推送到 main 分支即可自动部署。
 
-1. **安装 gh-pages 工具**
-```bash
-npm install --save-dev gh-pages
-```
+#### 自动化部署(推荐)
 
-2. **配置 GitHub 仓库**
+1. **首次配置**
+
 确保项目已推送到 GitHub 仓库:
 ```bash
 git init
 git add .
 git commit -m "Initial commit"
-git remote add origin https://github.com/Chandler-Song/prompt-home.git
+git branch -M main
+git remote add origin git@github.com:Chandler-Song/prompt-home.git
 git push -u origin main
 ```
 
-3. **一键部署**
-```bash
-npm run deploy
-```
-
-4. **启用 GitHub Pages**
+2. **启用 GitHub Pages**
    - 打开 GitHub 仓库页面
    - 进入 **Settings** → **Pages**
-   - Source 选择 **Deploy from a branch**
-   - Branch 选择 **gh-pages** 分支
-   - 点击 **Save**
+   - Source 选择 **GitHub Actions**
+   - 系统会自动识别已配置的工作流
 
-5. **访问网站**
-等待 1-2 分钟后,访问: `https://Chandler-Song.github.io/prompt-home`
+3. **触发部署**
 
-#### 方法二:手动部署
-
-1. **构建项目**
+每次推送到 main 分支都会自动触发部署:
 ```bash
-npm run build
-```
-
-2. **将 dist 目录内容推送到 gh-pages 分支**
-```bash
-cd dist
-git init
 git add .
-git commit -m "Deploy to GitHub Pages"
-git push -f https://github.com/Chandler-Song/prompt-home.git main:gh-pages
+git commit -m "更新说明"
+git push origin main
 ```
 
-#### 方法三:GitHub Actions 自动部署
+或在 GitHub Actions 页面手动触发:
+   - 进入 **Actions** → **Deploy to GitHub Pages**
+   - 点击 **Run workflow** → **Run workflow**
 
-创建 `.github/workflows/deploy.yml`:
+4. **访问网站**
 
-```yaml
-name: Deploy to GitHub Pages
+等待 1-2 分钟构建完成后,访问: `https://Chandler-Song.github.io/prompt-home`
 
-on:
-  push:
-    branches: [ main ]
+#### 部署配置说明
 
-jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+项目使用 GitHub Actions 工作流 `.github/workflows/deploy.yml`:
+- ✅ 监听 main 分支推送
+- ✅ 支持手动触发
+- ✅ 自动安装依赖(含缓存)
+- ✅ 自动构建并部署
+- ✅ 并发控制,避免重复部署
+- ✅ 使用最新的 deploy-pages action
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
+**工作流特点:**
+- **缓存优化**: 使用 npm cache 加速依赖安装
+- **权限控制**: 最小权限原则(pages write, id-token write)
+- **并发管理**: 同一时间只运行一个部署任务
+- **Node.js 20**: 使用稳定版本构建环境
 
-      - name: Install dependencies
-        run: npm install
+#### 更新内容后部署
 
-      - name: Build
-        run: npm run build
+1. **修改数据文件**
+   - 编辑 `public/data/resources.json` (学习资源)
+   - 编辑 `public/data/prompts.json` (提示词收藏)
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+2. **提交并推送**
+```bash
+git add public/data/
+git commit -m "更新提示词资源"
+git push origin main
 ```
+
+GitHub Actions 会自动构建并部署,1-2 分钟后生效。
+
+#### 故障排查
+
+如果部署失败,检查:
+1. **GitHub Actions 日志**: 进入 Actions 标签页查看详细错误
+2. **Node.js 版本**: 确保本地使用 Node.js 18+
+3. **依赖安装**: 运行 `npm install` 确保所有依赖正确安装
+4. **构建测试**: 本地运行 `npm run build` 确认构建成功
+5. **Pages 设置**: 确认 Pages Source 设置为 GitHub Actions
 
 ## 📝 数据配置指南
 
