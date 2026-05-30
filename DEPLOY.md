@@ -1,43 +1,35 @@
-# 🚀 快速部署指南
+# 🚀 部署指南
 
-## 部署到 GitHub Pages (3 步完成)
+## ✅ 部署已完成
 
-### 步骤 1: 安装部署工具
-```bash
-cd prompt-home
-npm install --save-dev gh-pages
-```
+网站已成功部署到 GitHub Pages!
 
-### 步骤 2: 初始化 Git 并推送
-```bash
-git init
-git add .
-git commit -m "Initial commit: Prompt Home website"
-git branch -M main
-git remote add origin https://github.com/Chandler-Song/prompt-home.git
-git push -u origin main
-```
-
-### 步骤 3: 部署网站
-```bash
-npm run deploy
-```
-
-### 启用 GitHub Pages
-1. 访问: https://github.com/Chandler-Song/prompt-home/settings/pages
-2. Source 选择: **Deploy from a branch**
-3. Branch 选择: **gh-pages** 
-4. 点击 **Save**
-
-### 访问网站
-等待 1-2 分钟后访问:
-👉 **https://Chandler-Song.github.io/prompt-home**
+**访问地址**: https://Chandler-Song.github.io/prompt-home
 
 ---
 
-## 更新网站
+## 已完成的配置
 
-每次修改数据或代码后:
+### 1. Git 仓库初始化
+- ✅ 初始化 Git 仓库
+- ✅ 配置 SSH 远程仓库: `git@github.com:Chandler-Song/prompt-home.git`
+- ✅ 推送到 main 分支
+
+### 2. GitHub Pages 部署
+- ✅ 安装 gh-pages 工具
+- ✅ 配置部署脚本 (package.json)
+- ✅ 配置 Vite base 路径: `/prompt-home/`
+- ✅ 创建并推送 gh-pages 分支
+
+### 3. SSH 认证
+- ✅ SSH 密钥已配置并测试通过
+- ✅ 使用 SSH 协议推送 (安全且无需重复输入密码)
+
+---
+
+## 后续更新流程
+
+每次修改代码或数据后,按以下步骤更新:
 
 ```bash
 # 1. 提交更改
