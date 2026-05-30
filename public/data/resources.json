@@ -1,0 +1,116 @@
+{
+  "categories": [
+    {
+      "id": "tutorial",
+      "name": "提示词学习教程",
+      "icon": "BookOpen",
+      "resources": [
+        {
+          "name": "OpenAI Prompt Engineering Guide",
+          "description": "OpenAI 官方提示词工程最佳实践指南,涵盖基础到高级技巧",
+          "url": "https://platform.openai.com/docs/guides/prompt-engineering",
+          "tags": ["官方文档", "基础教程", "最佳实践"]
+        },
+        {
+          "name": "Learn Prompting",
+          "description": "开源的提示词学习课程,从入门到精通的系统教程",
+          "url": "https://learnprompting.org/",
+          "tags": ["开源课程", "系统学习", "中文支持"]
+        },
+        {
+          "name": "Prompt Engineering Guide",
+          "description": "全面的提示词工程学习资源,包含论文、工具和案例",
+          "url": "https://www.promptingguide.ai/",
+          "tags": ["综合指南", "论文集合", "案例分析"]
+        },
+        {
+          "name": "DeepLearning.AI - ChatGPT Prompt Engineering",
+          "description": "吴恩达团队的 ChatGPT 提示词工程开发者课程",
+          "url": "https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/",
+          "tags": ["视频课程", "开发者", "权威认证"]
+        }
+      ]
+    },
+    {
+      "id": "optimizer",
+      "name": "提示词优化工具",
+      "icon": "Wrench",
+      "resources": [
+        {
+          "name": "PromptPerfect",
+          "description": "AI 驱动的提示词优化器,自动改进提示词质量",
+          "url": "https://promptperfect.jina.ai/",
+          "tags": ["自动优化", "AI驱动", "多语言"]
+        },
+        {
+          "name": "Humanloop",
+          "description": "提示词测试和优化平台,支持 A/B 测试",
+          "url": "https://humanloop.com/",
+          "tags": ["测试平台", "A/B测试", "性能分析"]
+        },
+        {
+          "name": "PromptBase",
+          "description": "提示词市场和优化工具,发现高质量提示词",
+          "url": "https://promptbase.com/",
+          "tags": ["提示词市场", "质量评估", "社区"]
+        }
+      ]
+    },
+    {
+      "id": "generator",
+      "name": "提示词生成器",
+      "icon": "Sparkles",
+      "resources": [
+        {
+          "name": "Prompt Generator",
+          "description": "基于模板的提示词生成工具,快速创建专业提示词",
+          "url": "https://prompt-generator.app/",
+          "tags": ["模板生成", "快速创建", "多场景"]
+        },
+        {
+          "name": "FlowGPT",
+          "description": "社区驱动的提示词分享和生成平台",
+          "url": "https://flowgpt.com/",
+          "tags": ["社区驱动", "提示词库", "协作"]
+        },
+        {
+          "name": "PromptHero",
+          "description": "AI 艺术提示词搜索引擎和生成器",
+          "url": "https://prompthero.com/",
+          "tags": ["AI艺术", "图像生成", "搜索引擎"]
+        }
+      ]
+    },
+    {
+      "id": "others",
+      "name": "其他相关资源",
+      "icon": "Library",
+      "resources": [
+        {
+          "name": "Awesome ChatGPT Prompts",
+          "description": "GitHub 上最受欢迎的 ChatGPT 提示词集合",
+          "url": "https://github.com/f/awesome-chatgpt-prompts",
+          "tags": ["GitHub", "开源", "精选集合"]
+        },
+        {
+          "name": "Prompt Engineering GitHub Repository",
+          "description": "提示词工程资源汇总,包含论文、工具和教程",
+          "url": "https://github.com/dair-ai/Prompt-Engineering-Guide",
+          "tags": ["GitHub", "资源汇总", "学术研究"]
+        },
+        {
+          "name": "OpenAI Cookbook",
+          "description": "OpenAI API 使用示例和最佳实践代码库",
+          "url": "https://github.com/openai/openai-cookbook",
+          "tags": ["官方示例", "代码库", "API指南"]
+        },
+        {
+          "name": "AI Prompt Library",
+          "description": "按行业分类的提示词库,覆盖营销、编程、教育等",
+          "url": "https://library.phygital.plus/",
+          "tags": ["行业分类", "应用场景", "实用工具"]
+        }
+      ]
+    }
+  ]
+}

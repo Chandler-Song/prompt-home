@@ -1,0 +1,24 @@
+.prompts-page {
+  padding: var(--spacing-3xl) 0 var(--spacing-4xl);
+}
+
+.prompts-stats {
+  margin: var(--spacing-lg) 0;
+  text-align: center;
+}
+
+.stats-text {
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  color: var(--color-text-secondary);
+}
+
+.stats-filter-hint {
+  font-size: var(--font-size-sm);
+  color: var(--color-primary);
+  margin-left: var(--spacing-sm);
+}
+
+.prompts-content {
+  margin-top: var(--spacing-xl);
+}
