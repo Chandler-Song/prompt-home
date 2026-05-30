@@ -1,0 +1,268 @@
+{
+  "categories": [
+    {
+      "id": "tutorial",
+      "name": "提示词学习教程",
+      "icon": "BookOpen",
+      "resources": [
+        {
+          "name": "OpenAI Prompt Engineering Guide",
+          "description": "OpenAI 官方提示词工程最佳实践指南,涵盖基础到高级技巧",
+          "url": "https://platform.openai.com/docs/guides/prompt-engineering",
+          "tags": ["官方文档", "基础教程", "最佳实践"]
+        },
+        {
+          "name": "Learn Prompting",
+          "description": "开源的提示词学习课程,从入门到精通的系统教程",
+          "url": "https://learnprompting.org/",
+          "tags": ["开源课程", "系统学习", "中文支持"]
+        },
+        {
+          "name": "Prompt Engineering Guide",
+          "description": "全面的提示词工程学习资源,包含论文、工具和案例",
+          "url": "https://www.promptingguide.ai/",
+          "tags": ["综合指南", "论文集合", "案例分析"]
+        },
+        {
+          "name": "DeepLearning.AI - ChatGPT Prompt Engineering",
+          "description": "吴恩达团队的 ChatGPT 提示词工程开发者课程",
+          "url": "https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/",
+          "tags": ["视频课程", "开发者", "权威认证"]
+        },
+        {
+          "name": "Google PAIR - People + AI Guidebook",
+          "description": "Google 人机交互研究团队的 AI 交互设计指南",
+          "url": "https://pair.withgoogle.com/guidebook/",
+          "tags": ["Google", "交互设计", "研究"]
+        },
+        {
+          "name": "Anthropic Prompt Engineering",
+          "description": "Anthropic 官方 Claude 提示词工程文档",
+          "url": "https://docs.anthropic.com/claude/docs/intro-to-prompting",
+          "tags": ["Claude", "官方文档", "高级技巧"]
+        },
+        {
+          "name": "Microsoft Prompt Engineering Tutorial",
+          "description": "微软提示词工程教程,包含实际应用案例",
+          "url": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/prompt-engineering",
+          "tags": ["Azure", "企业应用", "教程"]
+        }
+      ]
+    },
+    {
+      "id": "optimizer",
+      "name": "提示词优化工具",
+      "icon": "Wrench",
+      "resources": [
+        {
+          "name": "PromptPerfect",
+          "description": "AI 驱动的提示词优化器,自动改进提示词质量",
+          "url": "https://promptperfect.jina.ai/",
+          "tags": ["自动优化", "AI驱动", "多语言"]
+        },
+        {
+          "name": "Humanloop",
+          "description": "提示词测试和优化平台,支持 A/B 测试",
+          "url": "https://humanloop.com/",
+          "tags": ["测试平台", "A/B测试", "性能分析"]
+        },
+        {
+          "name": "PromptBase",
+          "description": "提示词市场和优化工具,发现高质量提示词",
+          "url": "https://promptbase.com/",
+          "tags": ["提示词市场", "质量评估", "社区"]
+        },
+        {
+          "name": "OpenPrompt",
+          "description": "开源提示词优化框架,支持多种 LLM 模型",
+          "url": "https://github.com/thunlp/OpenPrompt",
+          "tags": ["开源", "框架", "多模型"]
+        },
+        {
+          "name": "PromptLayer",
+          "description": "提示词版本管理和性能追踪平台",
+          "url": "https://promptlayer.com/",
+          "tags": ["版本管理", "性能追踪", "团队协作"]
+        }
+      ]
+    },
+    {
+      "id": "generator",
+      "name": "提示词生成器",
+      "icon": "Sparkles",
+      "resources": [
+        {
+          "name": "Prompt Generator",
+          "description": "基于模板的提示词生成工具,快速创建专业提示词",
+          "url": "https://prompt-generator.app/",
+          "tags": ["模板生成", "快速创建", "多场景"]
+        },
+        {
+          "name": "FlowGPT",
+          "description": "社区驱动的提示词分享和生成平台",
+          "url": "https://flowgpt.com/",
+          "tags": ["社区驱动", "提示词库", "协作"]
+        },
+        {
+          "name": "PromptHero",
+          "description": "AI 艺术提示词搜索引擎和生成器",
+          "url": "https://prompthero.com/",
+          "tags": ["AI艺术", "图像生成", "搜索引擎"]
+        },
+        {
+          "name": "Promptomania",
+          "description": "Midjourney 和 Stable Diffusion 提示词生成器",
+          "url": "https://promptomania.com/",
+          "tags": ["Midjourney", "Stable Diffusion", "图像生成"]
+        },
+        {
+          "name": "Vellum",
+          "description": "AI 提示词 IDE,支持测试、版本控制和协作",
+          "url": "https://www.vellum.ai/",
+          "tags": ["IDE", "测试工具", "团队协作"]
+        }
+      ]
+    },
+    {
+      "id": "github",
+      "name": "GitHub 精选项目",
+      "icon": "Code",
+      "resources": [
+        {
+          "name": "Awesome ChatGPT Prompts",
+          "description": "GitHub 上最受欢迎的 ChatGPT 提示词集合 (50k+ stars)",
+          "url": "https://github.com/f/awesome-chatgpt-prompts",
+          "tags": ["GitHub", "开源", "精选集合"]
+        },
+        {
+          "name": "Prompt Engineering Guide",
+          "description": "提示词工程资源汇总,包含论文、工具和教程",
+          "url": "https://github.com/dair-ai/Prompt-Engineering-Guide",
+          "tags": ["GitHub", "资源汇总", "学术研究"]
+        },
+        {
+          "name": "OpenAI Cookbook",
+          "description": "OpenAI API 使用示例和最佳实践代码库",
+          "url": "https://github.com/openai/openai-cookbook",
+          "tags": ["官方示例", "代码库", "API指南"]
+        },
+        {
+          "name": "LangChain",
+          "description": "构建 LLM 应用的框架,支持提示词链和代理",
+          "url": "https://github.com/langchain-ai/langchain",
+          "tags": ["框架", "LLM应用", "链式调用"]
+        },
+        {
+          "name": "Promptfoo",
+          "description": "LLM 提示词测试和评估工具,支持自动化测试",
+          "url": "https://github.com/promptfoo/promptfoo",
+          "tags": ["测试工具", "自动化", "评估"]
+        },
+        {
+          "name": "DSPy",
+          "description": "斯坦福大学开发的提示词优化框架,自动优化提示词",
+          "url": "https://github.com/stanfordnlp/dspy",
+          "tags": ["学术研究", "自动优化", "框架"]
+        },
+        {
+          "name": "Guidance",
+          "description": "Microsoft 开发的提示词引导语言,结构化生成输出",
+          "url": "https://github.com/guidance-ai/guidance",
+          "tags": ["Microsoft", "结构化", "输出控制"]
+        },
+        {
+          "name": "LMQL",
+          "description": "大型模型查询语言,提供类型安全的提示词编程",
+          "url": "https://github.com/eth-sri/lmql",
+          "tags": ["查询语言", "类型安全", "编程"]
+        }
+      ]
+    },
+    {
+      "id": "architecture",
+      "name": "提示词架构模式",
+      "icon": "Layers",
+      "resources": [
+        {
+          "name": "Zero-Shot Prompting",
+          "description": "零样本提示词:直接提问,无需示例,适用于基础任务",
+          "url": "https://www.promptingguide.ai/techniques/zeroshot",
+          "tags": ["基础架构", "零样本", "直接提问"]
+        },
+        {
+          "name": "Few-Shot Prompting",
+          "description": "少样本提示词:提供少量示例,引导模型理解任务模式",
+          "url": "https://www.promptingguide.ai/techniques/fewshot",
+          "tags": ["示例引导", "少样本", "模式学习"]
+        },
+        {
+          "name": "Chain-of-Thought (CoT)",
+          "description": "思维链提示词:让模型逐步推理,提升复杂任务准确性",
+          "url": "https://www.promptingguide.ai/techniques/cot",
+          "tags": ["推理", "思维链", "复杂任务"]
+        },
+        {
+          "name": "ReAct Prompting",
+          "description": "推理+行动架构:结合推理和工具使用,实现自主决策",
+          "url": "https://www.promptingguide.ai/techniques/react",
+          "tags": ["推理", "工具使用", "自主决策"]
+        },
+        {
+          "name": "Tree of Thoughts (ToT)",
+          "description": "思维树架构:探索多条推理路径,选择最优解决方案",
+          "url": "https://www.promptingguide.ai/techniques/tot",
+          "tags": ["多路径", "搜索", "最优解"]
+        },
+        {
+          "name": "Self-Consistency",
+          "description": "自一致性架构:多次采样取最优,提升输出稳定性",
+          "url": "https://www.promptingguide.ai/techniques/consistency",
+          "tags": ["多次采样", "稳定性", "投票机制"]
+        },
+        {
+          "name": "Role Prompting",
+          "description": "角色设定架构:为模型分配专家角色,提升专业度",
+          "url": "https://www.promptingguide.ai/techniques/role",
+          "tags": ["角色设定", "专家模式", "专业性"]
+        },
+        {
+          "name": "Prompt Chaining",
+          "description": "提示词链架构:串联多个提示词,实现复杂工作流",
+          "url": "https://www.promptingguide.ai/techniques/chaining",
+          "tags": ["工作流", "链式调用", "复杂任务"]
+        }
+      ]
+    },
+    {
+      "id": "others",
+      "name": "其他相关资源",
+      "icon": "Library",
+      "resources": [
+        {
+          "name": "AI Prompt Library",
+          "description": "按行业分类的提示词库,覆盖营销、编程、教育等",
+          "url": "https://library.phygital.plus/",
+          "tags": ["行业分类", "应用场景", "实用工具"]
+        },
+        {
+          "name": "Prompt Engineering Toolkit",
+          "description": "提示词工程工具包,包含测试、监控和部署工具",
+          "url": "https://github.com/prompt-engineering/awesome-prompt-engineering",
+          "tags": ["工具包", "资源集合", "实用工具"]
+        },
+        {
+          "name": "Anthropic Console",
+          "description": "Claude 提示词测试和调试平台,支持版本对比",
+          "url": "https://console.anthropic.com/",
+          "tags": ["Claude", "测试平台", "版本对比"]
+        },
+        {
+          "name": "OpenAI Playground",
+          "description": "OpenAI 官方提示词测试环境,支持参数调优",
+          "url": "https://platform.openai.com/playground",
+          "tags": ["OpenAI", "测试环境", "参数调优"]
+        }
+      ]
+    }
+  ]
+}
