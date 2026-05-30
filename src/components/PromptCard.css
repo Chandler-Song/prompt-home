@@ -7,6 +7,17 @@
   border-radius: var(--border-radius-lg);
   transition: all var(--transition-base);
   gap: var(--spacing-base);
+  cursor: pointer;
+}
+
+.prompt-card.compact {
+  padding: var(--spacing-base);
+  gap: var(--spacing-sm);
+}
+
+.prompt-card.relaxed {
+  padding: var(--spacing-lg);
+  gap: var(--spacing-base);
 }
 
 .prompt-card:hover {

@@ -4,7 +4,11 @@
 
 .prompts-stats {
   margin: var(--spacing-lg) 0;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-base);
 }
 
 .stats-text {
@@ -19,6 +23,109 @@
   margin-left: var(--spacing-sm);
 }
 
+.items-per-page {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.page-size-btn {
+  padding: 4px 12px;
+  background: var(--color-background);
+  border: 1px solid var(--color-border-light);
+  border-radius: 6px;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.page-size-btn:hover {
+  background: var(--color-hover);
+  color: var(--color-text);
+}
+
+.page-size-btn.active {
+  background: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+}
+
 .prompts-content {
   margin-top: var(--spacing-xl);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-3xl);
+  padding: var(--spacing-xl) 0;
+  flex-wrap: wrap;
+}
+
+.page-btn {
+  padding: 8px 16px;
+  background: var(--color-card);
+  border: 1px solid var(--color-border-light);
+  border-radius: 8px;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.page-btn:hover:not(:disabled) {
+  background: var(--color-hover);
+  color: var(--color-text);
+  border-color: var(--color-border);
+}
+
+.page-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.page-numbers {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.page-number {
+  min-width: 36px;
+  height: 36px;
+  padding: 0 8px;
+  background: var(--color-card);
+  border: 1px solid var(--color-border-light);
+  border-radius: 8px;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.page-number:hover {
+  background: var(--color-hover);
+  color: var(--color-text);
+  border-color: var(--color-border);
+}
+
+.page-number.active {
+  background: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-soft);
+}
+
+.ellipsis {
+  padding: 0 4px;
+  color: var(--color-text-tertiary);
+  font-weight: 500;
 }

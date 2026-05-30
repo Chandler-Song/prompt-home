@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { BookOpen, Wrench, Sparkles, Library } from 'lucide-react';
+import { BookOpen, Wrench, Sparkles, Library, Code, Layers, LayoutGrid, LayoutList } from 'lucide-react';
 import SearchBar from '../components/SearchBar';
 import ResourceCard from '../components/ResourceCard';
 import './Resources.css';
@@ -8,12 +8,15 @@ const iconMap = {
   BookOpen: BookOpen,
   Wrench: Wrench,
   Sparkles: Sparkles,
-  Library: Library
+  Library: Library,
+  Code: Code,
+  Layers: Layers
 };
 
 function Resources() {
   const [data, setData] = useState({ categories: [] });
   const [searchTerm, setSearchTerm] = useState('');
+  const [layout, setLayout] = useState('compact');
 
   useEffect(() => {
     fetch('/prompt-home/data/resources.json')
@@ -36,10 +39,30 @@ function Resources() {
   return (
     <div className="resources-page">
       <div className="page-header">
-        <h1 className="page-title">提示词学习资源</h1>
-        <p className="page-subtitle">
-          精选优质的提示词学习教程、工具和资源
-        </p>
+        <div className="header-top">
+          <div>
+            <h1 className="page-title">提示词学习资源</h1>
+            <p className="page-subtitle">
+              精选优质的提示词学习教程、工具和资源
+            </p>
+          </div>
+          <div className="layout-toggle">
+            <button 
+              className={`layout-btn ${layout === 'compact' ? 'active' : ''}`}
+              onClick={() => setLayout('compact')}
+              title="紧凑布局"
+            >
+              <LayoutGrid size={18} />
+            </button>
+            <button 
+              className={`layout-btn ${layout === 'relaxed' ? 'active' : ''}`}
+              onClick={() => setLayout('relaxed')}
+              title="宽松布局"
+            >
+              <LayoutList size={18} />
+            </button>
+          </div>
+        </div>
         <SearchBar
           value={searchTerm}
           onChange={setSearchTerm}
@@ -67,9 +90,9 @@ function Resources() {
                 </span>
               </div>
               
-              <div className="grid-resources">
+              <div className={`grid-resources ${layout}`}>
                 {filteredResources.map((resource, index) => (
-                  <ResourceCard key={index} resource={resource} />
+                  <ResourceCard key={index} resource={resource} layout={layout} />
                 ))}
               </div>
             </section>

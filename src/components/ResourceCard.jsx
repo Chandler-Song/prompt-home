@@ -1,7 +1,7 @@
 import { ExternalLink } from 'lucide-react';
 import './ResourceCard.css';
 
-function ResourceCard({ resource }) {
+function ResourceCard({ resource, layout = 'compact' }) {
   const { name, description, url, tags } = resource;
 
   return (
@@ -9,7 +9,7 @@ function ResourceCard({ resource }) {
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      className="resource-card"
+      className={`resource-card ${layout}`}
     >
       <div className="resource-content">
         <h3 className="resource-title">{name}</h3>
